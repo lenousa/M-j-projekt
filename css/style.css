@@ -27,7 +27,7 @@ body {
     width: 500px;
     background-color:black;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 footer {
@@ -70,9 +70,12 @@ header {
 
 /*obsah hlavni stranky - zacatek*/
 
+.introduction {
+    margin: 50px 100px;
+}
+
 .introduction__content h1, .introduction__content p {
     text-align: center;
-    margin: 100px 100px;
 }
 
 .introduction__content h1 {
@@ -86,11 +89,11 @@ header {
 .about {
     display: grid;
     grid-template-columns: 700px 30px 1fr;
-    margin: 100px 100px;
+    margin: 50px 100px;
 }
 
 .about__who {
-    display: grid;
+    display: grid; 
     grid-template-rows: 1fr 1fr;
 }
 
@@ -111,11 +114,16 @@ header {
     background-color:#000000;
 }
 
+.about__article--left .about__image {
+    order: 1;
+}
+
+
 /*konec sekce O nás */
 
 /*začátek sekce Pohlednice */
 
-section {
+.postcart {
   display: grid;
   margin: 50px 50px 50px 50px;
   grid-template-columns: repeat(auto-fill, 1fr);
@@ -124,25 +132,25 @@ section {
   align-items: center;
 }
 
-.section__name {
+.postcart__name {
     font-size: 40px;
 }
 
-.section__item {
+.postcart__item {
     width: 500px;
     border: 1px solid black;
   }
   
-.section__item-pic {
+.postcart__item-pic {
     width: 100%;
   }
   
-.section__item-desc {
+.postcart__item-desc {
     padding: 20px;
     text-align: center;
   }
 
-  .button {
+.button {
     display: inline-block;
     padding: 10px 20px;
     background-color: black;
@@ -150,8 +158,8 @@ section {
     text-decoration: none;
   }
   
-  .button:hover,
-  .button:focus {
+.button:hover,
+.button:focus {
     background-color: gray;
   }
 
@@ -164,7 +172,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
-  
+
   .detail h3 {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
