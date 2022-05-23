@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paperplane</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,500;8..144,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+<body>
+    <header>
+        <div class="header__image">
+            <li class="header__item"><a href="/" class="header__link"><img class="header__logo" src="/images/logo.svg" alt="logo"></a></li>
+        </div>
+
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/onas/" class="menu__link">O nás</a></li>
+                <li class="menu__item"><a href="/pohlednice/" class="menu__link">Pohlednice</a></li>
+                <li class="menu__item"><a href="/knihy/" class="menu__link">Knihy</a></li>
+                <li class="menu__item"><a href="/blog/" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr class="hr__up">
+
+    <section class="introduction">
+
+        {{ content | safe }}
+
+    </section>
+
+    <hr class="hr__down">
+
+        <footer>
+            <div class="footer__small">
+                <img src="/images/smallpaperplane.svg" alt="smallpaperplane">
+            </div>
+
+            <div class="footer__copyright">
+                <p> Paperplane, 2022 </p>
+            </div>
+        </footer>
+    </body>
+
+</html>

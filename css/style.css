@@ -1,0 +1,109 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/*zacatek sablony hlavicky, paticky, menu*/
+
+.header__logo {
+    width: 200px;
+}
+
+.footer__small {
+    width: 50px;
+}
+
+.hr__up {
+    height: 5px;
+    background-color:#000000;
+    margin: 0;
+}
+
+.hr__down {
+    height: 3px;
+    width: 500px;
+    background-color:black;
+    margin: auto;
+    margin-top: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__list {
+	list-style: none;
+    margin-top: 100px;
+    margin-bottom: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu__item {
+	margin: 30px 30px;
+	padding: 0;
+}
+
+.menu__link {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+/*konec sablony hlavicky, paticky, menu*/
+
+/*obsah hlavni stranky - zacatek*/
+
+.introduction__content h1, .introduction__content p {
+    text-align: center;
+    margin: 100px 100px;
+}
+
+.introduction__content h1 {
+    font-size: 50px;
+}
+
+/*obsah hlavni stranky - konec*/
+
+/*začátek sekce O nás */
+
+
+.about {
+    display: grid;
+    grid-template-columns: 700px 30px 1fr;
+    margin: 100px 100px;
+}
+
+.about__who {
+    display: flex;
+    flex-direction: column;
+}
+.about__article {
+    display: flex;
+}
+
+.about__who img {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.about__line {
+    width: 3px;
+    background-color:#000000;
+}
+/*konec sekce O nás */
+
+
