@@ -1,0 +1,133 @@
+---
+layout: hlavni-sablona
+title: Koupit
+---
+<form class="pop-up">
+
+<div class="pop-up__window">
+
+    <h2>Děkujeme za objednávku</h2>
+
+    <img src="/images/smallpaperplane.svg" alt="smallpaperplane">
+
+<div>
+
+<div class="form">
+
+        <div class="form__goods">
+
+            <fieldset>
+                <legend>Vyberte položku o kterou máte zájem:</legend>
+
+                <p>Výzvové pohlednice</p>
+
+                <div class="form__field-horizontal">
+                    <div class="form__field-horizontal-text">
+                        <input type="checkbox" name="vrcholy" id="vrcholy" value="ano">
+                        <label for="vrcholy">Vrcholy</label>
+                    </div>
+
+                    <div class="form__field-horizontal-piece">
+                        <input type="number" name="kusy" id="kusy" size="1">
+                        <label for="kusy">Ks</label>
+                    </div>
+                </div>
+
+                <div class="form__field-horizontal">
+                    <div class="form__field-horizontal-text">
+                        <input type="checkbox" name="mista" id="mista" value="ano">
+                        <label for="mista">Mista</label>
+                    </div>
+
+                    <div class="form__field-horizontal-piece">
+                        <input type="number" name="kusy" id="kusy" size="1">
+                        <label for="kusy">Ks</label>
+                    </div>
+                </div>
+
+                <div class="form__field-horizontal">
+                    <div class="form__field-horizontal-text">
+                        <input type="checkbox" name="pamatky" id="pamatky" value="ano">
+                        <label for="pamatky">Pamatky</label>
+                    </div>
+
+                    <div class="form__field-horizontal-piece">
+                        <input type="number" name="kusy" id="kusy" size="1">
+                        <label for="kusy">Ks</label>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <div class="form__contact">
+            <fieldset>
+
+                <legend>Kontaktní údaje</legend>
+
+                    <label for="jmeno">Jméno</label>
+                    <input type="text" name="jmeno" id="jmeno" size="20" required>
+
+                    <label for="prijimeni">Přijímení</label>
+                    <input type="text" name="prijimeni" id="prijimeni" size="20" required>
+
+                    <label for="adresa">Adresa(ulice, č.p.)</label>
+                    <input type="text" name="adresa" id="adresa" size="30" required>
+
+                    <label for="mesto">Město</label>
+                    <input type="text" name="mesto" id="mesto" size="20" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" size="30" required>
+
+                    <label for="telefon">Telefonní číslo</label>
+                    <input type="tel" name="telefon" id="telefon" size="20" required>
+
+                    <label for="poznamka">Poznámka</label>
+                    <textarea name="poznamka" id="poznamka" row="15"></textarea>
+
+                </fieldset>
+            </div>
+
+        <div class="form__last">  
+
+            <div class="form__last-payment">
+
+                <fieldset>
+                
+                    <legend>Způsob platby</legend>
+
+                    <div class="form__field-horizontal">
+                        <input type="radio" name="platba" id="platba">
+                        <label for="platba1">Platba v hotovosti při převzetí</label>
+                    </div>
+
+                    <div class="form__field-horizontal">
+                        <input type="radio" name="platba" id="platba">
+                        <label for="platba2">Platba převodem na účet</label>
+                    </div>
+                    
+                </fieldset>
+            </div>
+
+            <div class="form__last-rules">
+                <fieldset>
+                
+                    <legend>Odeslat objednávku</legend>
+
+                    <div class="form__field-horizontal">
+                        <input type="checkbox" name="souhlas" id="souhlas" value="ano" required>
+                        <label for="souhlas">Souhlasím se spracováním osobních údajů</label>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="form__last-send">
+
+                 <input type="submit" name="tlacitko" value="Odeslat">
+
+            </div>
+
+        </div>    
+</div>

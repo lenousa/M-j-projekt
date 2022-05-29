@@ -1,0 +1,21 @@
+---
+layout: hlavni-sablona.njk
+---
+
+<div class="detail">
+
+	<img class="detail__img" src="/images/{{ foto }}" alt="{{ alt }}">
+
+	<div class="detail__desc">
+
+		<h1>{{ title }}</h1>
+
+		{{ content | safe }}
+
+		<h3>Cena</h3>
+		<p class="detail__price">{{ price }}</p>
+        <a class="button" href="/koupit/">Koupit</a>
+		
+	</div>
+
+</div>

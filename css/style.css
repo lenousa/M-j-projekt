@@ -70,8 +70,11 @@ header {
 
 /*obsah hlavni stranky - zacatek*/
 
-.introduction {
-    margin: 50px 100px;
+.introduction__content {
+    margin: auto;
+    margin-top: 150px;
+    width: 800px;
+    height: 400px;
 }
 
 .introduction__content h1, .introduction__content p {
@@ -89,7 +92,7 @@ header {
 .about {
     display: grid;
     grid-template-columns: 700px 30px 1fr;
-    margin: 50px 100px;
+    margin: 50px 200px;
 }
 
 .about__who {
@@ -111,41 +114,60 @@ header {
 
 .about__line {
     width: 3px;
-    background-color:#000000;
+    background-color: black;
 }
 
-.about__article--left .about__image {
-    order: 1;
+.about__article--left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
 }
 
 
 /*konec sekce O nás */
 
-/*začátek sekce Pohlednice */
+/*začátek sekce vyber */
 
-.postcart {
+.postcart-chalenge {
   display: grid;
-  margin: 50px 50px 50px 50px;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-auto-flow: column;
-  gap: 30px;
+  margin: 50px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 10px;
   align-items: center;
 }
 
-.postcart__name {
-    font-size: 40px;
+.postcart-chalenge__name {
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(/images/smallpaperplane.svg);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: center;
 }
 
-.postcart__item {
+.postcart-chalange_offer {
+    display: grid;
+    margin: 50px 50px 50px 50px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-flow: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.postcart-chalenge__item {
     width: 500px;
     border: 1px solid black;
   }
   
-.postcart__item-pic {
+.postcart-chalenge__item-pic {
     width: 100%;
   }
   
-.postcart__item-desc {
+.postcart-chalenge__item-desc {
     padding: 20px;
     text-align: center;
   }
@@ -163,7 +185,7 @@ header {
     background-color: gray;
   }
 
-/*konec sekce Pohlednice */
+/*konec sekce vyber */
 
 /*začátek sekce Detail - pohlednice */
 
@@ -171,6 +193,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin: 50px 200px;
   }
 
   .detail h3 {
@@ -190,3 +213,191 @@ header {
   }
 
   /*konec sekce Detail - pohlednice */
+
+  /*začátek sekce - pohlednice */
+
+  .cathegory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .cathegory__item {
+      width: 300px;
+      height: 300px;
+      border: 3px solid black;
+      border-radius: 50%;
+      background-image: url(/images/smallpaperplane.svg);
+      background-repeat: no-repeat;
+      background-size: 300px;
+      background-position: center;
+  }
+
+  .cathegory__name {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 220px;
+     
+  }
+
+  .cathegory__link {
+      color: #000000;
+      text-decoration: none;
+  }
+
+   /*konec sekce - pohlednice */
+
+   /*zacatek sekce - koupit */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 200px;
+}
+
+.form__last {
+    display: grid;
+    grid-template-rows: 30% 20% 50%;
+}
+
+.form__last-send {
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.form input[type="number"] {
+    width: 40px;
+}
+
+.form__goods .form__field-horizontal {
+    width: 200px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__contact label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.form__contact {
+    width: 100%;
+}
+
+.form__contact textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.form__field-horizontal input {
+    width: 20px;
+}
+
+.form__last-payment {
+    margin-bottom: 30px;
+}
+
+.form__last-payment .form__field-horizontal {
+    padding: 15px;
+}
+
+.form__last-rules .form__field-horizontal {
+    padding: 15px;
+}
+
+.form input[type="submit"] {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+   /*zacatek sekce - koupit */
+
+    /*zacatek sekce - odeslano */
+
+.form .pop-up {
+    position: relative;
+}
+
+.pop-up__window {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.pop-up img {
+    width: 100px;
+}
+
+/*konec sekce - odeslano */
+
+/*zacatek sekce - clanek */
+
+.article {
+    margin: 50px 200px;
+}
+
+.article__title  {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .article__meta {
+    color: silver;
+  }
+  
+  .article__content {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 50px;
+  }
+  
+  .article__perex {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .article__image {
+    display: block;
+    width: 80%;
+  }
+
+  .blog {
+    display: grid;
+    margin: 50px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* .blog {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  } */
+
+  .blog__clanek {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 50px;
+      justify-items: center;
+      border: 2px solid black;
+      width: 400px;
+  }
+
+  .blog__clanek img {
+      width: 60%;
+      align-self: center;
+  }
+
+/*konec sekce - clanek */

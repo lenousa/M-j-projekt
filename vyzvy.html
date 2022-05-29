@@ -1,0 +1,30 @@
+---
+layout: hlavni-sablona
+title: Vyzvy
+---
+
+<h1 class="postcart-chalenge__name">Výzvy</h1>
+
+{% for prispevek in collections.vyzvy %}
+
+<div class="postcart-chalenge">
+
+    <div class="postcart-chalange_offer">
+
+        <div class="postcart-chalenge__item">
+
+            <img class="postcart-chalenge__item-pic" src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
+
+            <div class="postcart-chalenge__item-desc">
+                <h2>{{ prispevek.data.title }}</h2>
+                <p>{{ prispevek.data.perex }}</p>
+                <a class="button" href="{{ prispevek.url }}">Detail</a>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+{% endfor %}
