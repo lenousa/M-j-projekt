@@ -2,10 +2,9 @@
 layout: hlavni-sablona
 title: Blog
 ---
+<div class="blog">
 
 {% for prispevek in collections.blog %}
-
-<div class="blog">
 
     <div class="blog__clanek">
         <img src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
@@ -13,10 +12,10 @@ title: Blog
         <div class="blog__clanek-popis">
             <h2>{{ prispevek.data.title }}</h2>
             <p>{{ prispevek.data.perex }}</p>
-            <p><a class="button" href="{{ prispevek.url }}">Číst</a></p>
+            <a class="button" href="{{ prispevek.url }}">Číst</a>
         </div>
     </div>
 
-</div>
-
 {% endfor %}
+
+</div>

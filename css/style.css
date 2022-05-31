@@ -24,7 +24,7 @@ body {
 
 .hr__down {
     height: 3px;
-    width: 500px;
+    max-width: 500px;
     background-color:black;
     margin: auto;
     margin-top: 50px;
@@ -66,6 +66,19 @@ header {
 	color: black;
 }
 
+@media screen and (max-width: 540px) {
+
+    .menu__list {
+        margin-top: 10px;
+        flex-direction: column;
+    } 
+
+    .menu__item {
+        margin: 5px 5px;
+        padding: 0;
+    }    
+}
+
 /*konec sablony hlavicky, paticky, menu*/
 
 /*obsah hlavni stranky - zacatek*/
@@ -73,8 +86,8 @@ header {
 .introduction__content {
     margin: auto;
     margin-top: 150px;
-    width: 800px;
-    height: 400px;
+    max-width: 800px;
+    max-height: 400px;
 }
 
 .introduction__content h1, .introduction__content p {
@@ -85,13 +98,23 @@ header {
     font-size: 50px;
 }
 
+@media screen and (max-width: 540px) {
+    .introduction__content {
+        margin: 60px;
+    }
+
+.hr__up {
+    margin-top: 30px;
+    }
+}
+
 /*obsah hlavni stranky - konec*/
 
 /*začátek sekce O nás */
 
 .about {
     display: grid;
-    grid-template-columns: 700px 30px 1fr;
+    grid-template-columns: 1.5fr 0.2fr 1fr;
     margin: 50px 200px;
 }
 
@@ -108,7 +131,7 @@ header {
 
 .about__who img {
     width: 200px;
-    border: 1px solid grey;
+    border: 2px solid black;
     border-radius: 50%;
 }
 
@@ -121,6 +144,25 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
+}
+
+@media screen and (max-width: 540px) {
+
+    .about {
+        display: grid;
+        grid-template-columns: none;
+        margin: 60px;
+    }
+
+    .about__line {
+        height: 0;
+        width: 0;
+    }
+
+    .about__article, .about__article--left {
+        grid-template-columns: none;
+    }
+
 }
 
 
@@ -147,19 +189,13 @@ header {
     background-repeat: no-repeat;
     background-size: 130px;
     background-position: center;
-}
-
-.postcart-chalange_offer {
-    display: grid;
-    margin: 50px 50px 50px 50px;
-    grid-template-columns: repeat(auto-fill, 1fr);
-    grid-auto-flow: column;
-    gap: 30px;
-    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .postcart-chalenge__item {
-    width: 500px;
+    max-width: 500px;
     border: 1px solid black;
   }
   
@@ -184,6 +220,19 @@ header {
 .button:focus {
     background-color: gray;
   }
+
+@media screen and (max-width: 540px) {
+
+    .postcart-chalenge {
+        grid-template-columns: none;
+        margin: 30px 30px 0 30px;
+    }
+
+    .postcart-chalenge__item {
+        min-width: 300px;
+    }
+
+}
 
 /*konec sekce vyber */
 
@@ -211,6 +260,13 @@ header {
     font-weight: bold;
     font-size: 30px;
   }
+
+  @media screen and (max-width: 540px) {
+    .detail {
+        grid-template-columns: none;
+        margin: 60px;
+      }
+}
 
   /*konec sekce Detail - pohlednice */
 
@@ -247,6 +303,13 @@ header {
       color: #000000;
       text-decoration: none;
   }
+
+  @media screen and (max-width: 540px) {
+    .cathegory {
+        grid-template-columns: none;
+        margin: 60px;
+      }
+}
 
    /*konec sekce - pohlednice */
 
@@ -319,11 +382,22 @@ header {
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 540px) {
+    .form {
+        grid-template-columns: none;
+        margin: 60px;
+      }
+
+      .form__last-rules {
+        margin-top: 40px;
+      }
+    }
    /*zacatek sekce - koupit */
 
-    /*zacatek sekce - odeslano */
+/*zacatek sekce - odeslano */
 
-.form .pop-up {
+/* .form .pop-up {
     position: relative;
 }
 
@@ -337,7 +411,7 @@ header {
 
 .pop-up img {
     width: 100px;
-}
+} */
 
 /*konec sekce - odeslano */
 
@@ -377,7 +451,7 @@ header {
     margin: 50px 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
 
@@ -388,16 +462,86 @@ header {
 
   .blog__clanek {
       display: grid;
+      max-width: 500px;
       grid-template-rows: 1fr 1fr;
       row-gap: 50px;
       justify-items: center;
       border: 2px solid black;
-      width: 400px;
   }
 
   .blog__clanek img {
-      width: 60%;
+      width: 100%;
       align-self: center;
   }
 
+  .blog__clanek-popis h2 {
+    text-align: center;
+  }
+
+  .blog__clanek-popis a {
+   
+  }
+
+  .blog__clanek-popis {
+      margin: 20px;
+  }
+
+  @media screen and (max-width: 540px) {
+        .blog {
+            grid-template-columns: none;
+            margin: 30px 30px 0 30px;
+        }
+
+        .blog__clanek {
+            min-width: 300px;
+        }
+
+        .blog__clanek img {
+            width: 100%;
+            align-self: center;
+        }
+
+        .article__content {
+            grid-template-columns: none;
+        }
+
+        .article {
+            margin: 60px;
+        }
+}
+
 /*konec sekce - clanek */
+
+/*zacatek sekce - ptodeti / pripravujeme */
+
+.inprogress {
+    margin: 50px 200px;
+    text-align: center;
+    height: 400px;
+}
+
+.inprogress img {
+    width: 150px;
+}
+
+/*konec sekce - ptodeti / pripravujeme */
+
+/*zacatek sekce - kontakt */
+
+.contact {
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+}
+
+.contact__line {
+    width: 3px;
+    background-color: black;
+}
+
+.contact__info {
+    padding: 0 0 50px 50px;
+}
+
+/*konec sekce - kontakt*/
