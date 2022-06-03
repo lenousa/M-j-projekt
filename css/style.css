@@ -89,6 +89,7 @@ header {
     margin-bottom: 100px;
     max-width: 800px;
     max-height: 400px;
+    min-height: calc(100vh - 259px - 200px - 10px);
 }
 
 .introduction__content h1, .introduction__content p {
@@ -285,6 +286,7 @@ header {
     justify-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    min-height: calc(100vh - 259px - 200px - 10px);
   }
 
   .cathegory__item {
@@ -400,27 +402,7 @@ header {
     }
    /*zacatek sekce - koupit */
 
-/*zacatek sekce - odeslano */
-
-/* .form .pop-up {
-    position: relative;
-}
-
-.pop-up__window {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border: 3px solid black;
-    background-color: white;
-}
-
-.pop-up img {
-    width: 100px;
-} */
-
-/*konec sekce - odeslano */
-
-/*zacatek sekce - clanek */
+/*zacatek sekce - blog a clanek */
 
 .article {
     margin: 50px 100px;
@@ -460,17 +442,24 @@ header {
   }
 
   .blog__clanek {
+      display: grid;
+      grid-template-rows: 1fr 0.5fr;
       max-width: 500px;
       border: 2px solid black;
   }
 
   .blog__clanek img {
-      width: 100%;
+     width: 100%;
   }
 
   .blog__clanek-popis {
-      padding: 20px;
+      padding: 0 20px 20px 20px;
       text-align: center;
+  }
+
+  .blog__clanek-pic {
+      min-height: 380px;
+      margin-top: 30px;
   }
 
   @media screen and (max-width: 540px) {
@@ -497,7 +486,7 @@ header {
         }
 }
 
-/*konec sekce - clanek */
+/*konec sekce - blog a clanek */
 
 /*zacatek sekce - ptodeti / pripravujeme */
 
@@ -547,3 +536,23 @@ header {
 }
 
 /*konec sekce - kontakt*/
+
+/*zacatek sekce - odeslano */
+
+/* .form .pop-up {
+    position: relative;
+}
+
+.pop-up__window {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.pop-up img {
+    width: 100px;
+} */
+
+/*konec sekce - odeslano */
